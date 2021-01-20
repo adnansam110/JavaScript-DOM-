@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <style>
+        .container{
+            width:600px;
+            height:400px;
+            background-color: black;
+            margin: auto;
+            position: absolute;
+            top: 30vh;
+            left: 20vw;
+            color: white;
+        }
+        h1,h2{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 30px;
+        }
+        form{
+            text-align: center;
+            padding-top: 10px;
+        }
+        label, input{
+            margin-bottom: 20px;
+            font-size: large;
+        }
+        h2{
+            padding-top:0;
+        }
+        #btn{
+            padding:10px;
+            width: 150px;
+            border: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:large;
+            background-color: teal;
+            color: white;
+        }
+        #btn:hover{
+            background-color: rgb(35, 102, 102);
+            transform: scale(0.97);
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Loan Calculator</h1>
+        <form class="myForm">
+            <label for="amount">Loan Amount: $</label>
+            <input id="amount" type="number" placeholder="Enter Amount...">
+            <br>
+            <label for="rate">Interest rate: %</label>
+            <input id="rate" type="number" placeholder="Enter Rate...">
+            <br>
+            <label for="month">Months To Pay: $</label>
+            <input id="months" type="number" placeholder="Months...">
+            <br>
+            <button id="btn">Calculate</button>
+        </form>
+        <h2>Monthly Payment = <span id="payment">0</span></h2>
+        
+    </div>
+    <script src="Loan Calculator.js"></script>
+</body>
+</html>
